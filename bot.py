@@ -68,8 +68,8 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TB_zone"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TB_zone")
+                        InlineKeyboardButton("Discussion Group", url="https://t.me/Official_Talks"),
+                        InlineKeyboardButton("Backup Channel", url="http://t.me/Streamflix_app")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -95,7 +95,7 @@ async def start(bot, cmd):
                 send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, from_chat_id=Config.DB_CHANNEL,
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
-                f"**Here is Sharable Link of this file:** https://t.me/{Config.BOT_USERNAME}?start=kenilpatel_{file_id}\n\n__To Retrive the Stored File, just open the link!__",
+                f"**Enjoy!**",
                 disable_web_page_preview=True, quote=True)
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
@@ -118,7 +118,7 @@ async def main(bot, message):
             else:
                 pass
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/TB_zone)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Discussion  Group](https://t.me/Official_Talks)",
                                      disable_web_page_preview=True)
             return
         if Config.OTHER_USERS_CAN_SAVE_FILE is False:
@@ -136,8 +136,8 @@ async def main(bot, message):
                 parse_mode="Markdown",
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton("Open Link", url=share_link)],
-                     [InlineKeyboardButton("Bots Channel", url="https://t.me/TB_zone"),
-                      InlineKeyboardButton("Support Group", url="https://t.me/TB_zone")]]
+                     [InlineKeyboardButton("Backup Channel", url="http://t.me/Streamflix_app"),
+                      InlineKeyboardButton("Discussion Group", url="https://t.me/Official_Talks")]]
                 ),
                 disable_web_page_preview=True
             )
@@ -331,8 +331,8 @@ async def button(bot, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TB_zone"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TB_zone")
+                        InlineKeyboardButton("Discussion Group", url="https://t.me/Official_Talks"),
+                        InlineKeyboardButton("Backup Channel", url="http://t.me/Streamflix_app")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -348,7 +348,7 @@ async def button(bot, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TB_zone).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Discussion Group](https://t.me/Official_Talks).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -371,7 +371,7 @@ async def button(bot, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/TB_zone).",
+                    text="Something went Wrong. Contact my [Discussion Group](https://t.me/Official_Talks).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -383,8 +383,8 @@ async def button(bot, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TB_zone"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TB_zone")
+                        InlineKeyboardButton("Discussion Group", url="https://t.me/Official_Talks"),
+                        InlineKeyboardButton("Backup Channel", url="http://t.me/Streamflix_app")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
