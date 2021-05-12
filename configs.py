@@ -32,14 +32,14 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 🧑🏻‍💻 **Developer:** @kenilpatel
 
-👥 **Support Group:** [Streamflix](https://t.me/TB_zone)
+👥 **Support Group:** [Streamflix](https://t.me/Official_Talks)
 
-📢 **Updates Channel:** [Streamflix](https://t.me/TB_zone)
+📢 **Updates Channel:** [Streamflix](https://t.me/joinchat/Tc2JfvP-u6OpznHM)
 """
 	ABOUT_DEV_TEXT = f"""
 🧑🏻‍💻 **Developer:** @kenilpatel
 
-Developer is Super Noob. Just Learning from Official Docs. 
+Developer is Noob. Just Learning from Official Docs. 
 
 Also remember that developer will Delete Adult Contents from Database. So better don't Store Those Kind of Things.
 
